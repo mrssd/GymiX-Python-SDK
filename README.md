@@ -8,14 +8,14 @@ Official Python SDK for the Gymix API - A comprehensive gym management and backu
 
 ## Features
 
-- 🏋️ **User Management**: Get user profile and gym information
-- 🏢 **Gym Management**: Access gym details, subscriptions, and plans
-- 💾 **Backup Services**: Create, list, download, and delete gym backups
-- 🔐 **Authentication**: Secure API key-based authentication
-- 📊 **Health Monitoring**: Check API service status
-- 🚀 **Easy to Use**: Simple and intuitive Python interface
-- 🛡️ **Type Safe**: Full type hints support
-- ⚡ **Async Support**: Built-in support for async/await patterns
+- **User Management**: Get user profile and gym information
+- **Gym Management**: Access gym details, subscriptions, and plans
+- **Backup Services**: Create, list, download, and delete gym backups
+- **Authentication**: Secure API key-based authentication
+- **Health Monitoring**: Check API service status
+- **Easy to Use**: Simple and intuitive Python interface
+- **Type Safe**: Full type hints support
+- **Async Support**: Built-in support for async/await patterns
 
 ## Installation
 
@@ -222,6 +222,8 @@ pytest tests/test_client.py
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+This Project is Powered by SATA.
 
 ## Support
 
