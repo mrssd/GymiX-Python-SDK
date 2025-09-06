@@ -59,8 +59,8 @@ class BackupEndpoint:
             GymixForbiddenError: Subscription expired
             GymixAPIError: Other API errors
         """
-        data = {'gym_public_key': gym_public_key}
-        response = self.client._make_request('GET', '/backup/plan', params={'data': data})
+        params = {'gym_public_key': gym_public_key}
+        response = self.client._make_request('GET', '/backup/plan', params=params)
         return response.get('data', {})
 
     def list(self, gym_public_key: str, verified: Optional[bool] = None) -> Dict[str, Any]:
@@ -82,11 +82,11 @@ class BackupEndpoint:
             GymixForbiddenError: Subscription expired
             GymixAPIError: Other API errors
         """
-        data = {'gym_public_key': gym_public_key}
+        params = {'gym_public_key': gym_public_key}
         if verified is not None:
-            data['verified'] = verified
+            params['verified'] = verified
             
-        response = self.client._make_request('GET', '/backup/list', params={'data': data})
+        response = self.client._make_request('GET', '/backup/list', params=params)
         return response.get('data', {})
 
     def download(self, backup_id: str, gym_public_key: str) -> Dict[str, Any]:

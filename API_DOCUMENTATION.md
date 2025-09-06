@@ -56,11 +56,11 @@ Base URL: `https://api.gymix.ir`
 
 ## Gym
 
-### POST `/gym/info`
+### GET `/gym/info`
 
 - **Description:** Get gym details, subscription, and plan info.
 - **Request:**
-  - `gym_public_key` (form field, required)
+  - `gym_public_key` (query parameter, required)
 - **Response:**
   ```json
   {
@@ -250,7 +250,7 @@ Base URL: `https://api.gymix.ir`
 
 - **Description:** Get backup plan info and usage for a gym.
 - **Request:**
-  - `data` (query/body, must include `gym_public_key`)
+  - `gym_public_key` (query parameter, required)
 - **Response:**
   ```json
   {
@@ -319,7 +319,8 @@ Base URL: `https://api.gymix.ir`
 
 - **Description:** List all backups for a gym.
 - **Request:**
-  - `data` (query/body, must include `gym_public_key`, optional `verified`)
+  - `gym_public_key` (query parameter, required)
+  - `verified` (query parameter, optional, boolean, default: false)
 - **Response:**
   ```json
   {

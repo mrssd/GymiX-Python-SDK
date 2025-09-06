@@ -30,6 +30,6 @@ class GymEndpoint:
             GymixNotFoundError: Gym not found or not owned by user
             GymixAPIError: Other API errors
         """
-        data = {'gym_public_key': gym_public_key}
-        response = self.client._make_request('POST', '/gym/info', data=data)
+        params = {'gym_public_key': gym_public_key}
+        response = self.client._make_request('GET', '/gym/info', params=params)
         return response.get('data', {})

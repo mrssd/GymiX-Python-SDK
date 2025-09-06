@@ -11,7 +11,7 @@ from .exceptions import (
     GymixBadRequestError
 )
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "Gymix Team"
 __email__ = "support@gymix.ir"
 
