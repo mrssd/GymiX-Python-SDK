@@ -113,8 +113,8 @@ class BackupEndpoint:
             GymixServerError: S3 error or download URL generation failed
             GymixAPIError: Other API errors
         """
-        data = {'gym_public_key': gym_public_key}
-        response = self.client._make_request('POST', f'/backup/download/{backup_id}', data=data)
+        files = {'gym_public_key': (None, gym_public_key)}
+        response = self.client._make_request('POST', f'/backup/download/{backup_id}', files=files)
         return response.get('data', {})
 
     def delete(self, backup_id: str, gym_public_key: str) -> Dict[str, Any]:
