@@ -447,7 +447,7 @@ Check API health status and system information. This endpoint does not require a
 {
     "status": "healthy",           # "healthy" or "unhealthy"
     "timestamp": "2024-01-01T10:00:00Z",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "uptime": "72h 15m 30s",
     "database": "connected",
     "storage": "available"
@@ -901,4 +901,4 @@ See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes and releases.
 
 ---
 
-_This documentation is for Gymix Python SDK version 1.0.0. For the latest updates, please check our GitHub repository._
+_This documentation is for Gymix Python SDK version 1.0.2. For the latest updates, please check our GitHub repository._

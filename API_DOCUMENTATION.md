@@ -569,7 +569,7 @@ Base URL: `https://api.gymix.ir`
     "data": {
       "status": "healthy",
       "timestamp": "2025-08-29T12:00:00Z",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "uptime": "5 days, 12 hours",
       "database": "connected",
       "storage": "operational"

@@ -44,7 +44,7 @@ class GymixClient:
         # Set default headers
         self.session.headers.update({
             'Authorization': f'Bearer {self.api_token}',
-            'User-Agent': 'Gymix-Python-SDK/1.0.0'
+            'User-Agent': 'Gymix-Python-SDK/1.0.2'
         })
         
         # Initialize endpoint clients
