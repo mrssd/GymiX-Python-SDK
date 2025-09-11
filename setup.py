@@ -11,7 +11,7 @@ with open(os.path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name="gymix",
-    version="1.0.1",
+    version="1.0.2",
     author="Gymix Team",
     author_email="support@gymix.ir",
     description="Official Python SDK for Gymix API - Gym management and backup services",
